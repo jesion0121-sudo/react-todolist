@@ -1,12 +1,19 @@
-import React from "react";
-import "./Header.css";
+import React from 'react'
+import './Header.css'
+
 
 const Header = () => {
   return (
-    <header className="Header">
-        <h3>오늘은 📆</h3>
-        <h1>{new Date().toDateString()}</h1>
+    <header className='Header'>
+      <h2>나의 유료구독 목록</h2>
+      <h1>{new Date().toLocaleDateString("ko-KR",{
+        year: "numeric",
+        month:"long",
+        day:"numeric",
+        weekday:"short",
+      })}</h1>
     </header>
-  );
+  )
 }
-export default Header;
+
+export default Header

@@ -1,3 +1,7 @@
-.Header>h1 {
-    color: rgb(37, 147, 255);
+.Header h2{
+    color: brown;
+}
+
+.Header h1{
+    color: burlywood;
 }
